@@ -1,12 +1,14 @@
 import Navigation from './components/Navigation/Navigation';
-import './App.css';
+import Logo from './components/Logo/Logo';
+// import './App.css';
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
 				<Navigation />
-				{/* {	<Logo />
+				<Logo />
+				{/* {
 				<ImageLinkForm />
 				<FaceRecognition />} */}
 			</header>
