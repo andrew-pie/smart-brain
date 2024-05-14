@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+import Signin from './components/Signin/Signin';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
@@ -130,7 +131,7 @@ class App extends Component {
 
 				//my part of code
 				const faceLocation = this.calculateFaceLocation(result);
-            this.displayFaceBox(faceLocation);
+				this.displayFaceBox(faceLocation);
 				//my part of code
 
 			})
@@ -143,6 +144,7 @@ class App extends Component {
 				<ParticlesBg type="cobweb" bg={true} />
 				<header className="App-header">
 					<Navigation />
+					<Signin />
 					<Logo />
 					<Rank />
 					<ImageLinkForm
